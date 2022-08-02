@@ -32,7 +32,6 @@ header nav ul li{
 .align_text{
     text-align: center;
     text-transform: uppercase;
-
 }
 
 .banner{
@@ -49,7 +48,8 @@ header nav ul li{
 
 
 .services{
-    background-color: lightgray;
+    background-color: #383838;
+    color: white;
     height: 711px;
 }
 
@@ -64,7 +64,134 @@ header nav ul li{
 .services .row{
     display: flex;
     justify-content: center;
-    background-color: gray;
+    align-items: center;
+    gap: 150px;
     height: 507px;
+}
 
+.services .row .element p{
+    margin-top: 37px;
+}
+
+.more_about_us{
+    
+    display: flex;
+    align-items: center;
+    gap: 85px;
+    height: 570px;
+    padding: 0 70px;
+}
+
+.products{
+    color:white;
+    background-color: #ff7630;
+}
+
+.products .products_list{
+    height: 275px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.products .products_list .element{
+    margin: 0;
+    width: 255px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.251), 0 6px 20px 0 rgba(0, 0, 0, 0.57);
+
+}
+
+.products_list_element_title{
+    color: #383838;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.products_list_element_text{
+    color: #383838;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.products_list_element_info{
+    background-color: white;
+    height: 105px;
+}
+
+.products .button{
+    text-align: center;
+    padding-bottom: 116px;
+}
+
+.products .button p{
+    border: 5px solid white;
+    padding: 14px 36px;
+    display: inline-block;
+}
+
+.forms .form_section{
+    display: flex;
+    justify-content: center;
+}
+
+.forms .form_section .button{
+    text-align: center;
+    padding-bottom: 116px;
+}
+
+.forms .form_section .button p{
+    border: 5px solid black;
+    padding: 14px 215px;
+    display: inline-block;
+}
+
+.forms .form_section form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 500px;
+}
+
+.forms .form_section form .element{
+    display: flex;
+    justify-content: space-between;
+}
+
+.rubban{
+    background-color: #292929;
+    height: 255px;
+}
+
+footer .row{
+    height: 318px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer{
+    text-align: center;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: right;
+}
+
+input[type="text"]::placeholder {
+    text-align: left;
 }
