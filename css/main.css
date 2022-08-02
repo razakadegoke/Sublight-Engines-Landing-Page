@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -228,6 +229,11 @@ input[type=text], select {
 
 input[type=text]::placeholder {
     text-align: left;
+}
+
+option{
+    text-align: left;
+    size: 10px;
 }
 
 label {
