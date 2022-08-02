@@ -6,14 +6,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title></title>
         <meta name="description" content="">
-        <link rel="stylesheet" href="css/main.css">    
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>    
-        <header>
-                <!--NAV SECTION-->
-                <div class="logo">
-                    <!--LOGO-->
+        <div>
+            <header style="z-index: 9;position: absolute;margin-top: 20px;">
+                <div class="logo" style="margin-left:20px;">
+                    <img src="assets/logo_sublight.svg">
                 </div>
                 <nav>
                     <ul>
@@ -23,14 +26,18 @@
                         <li><a href="#">CONTACT US</a></li>
                     </ul>
                 </nav>
-        </header>
-        <div class="banner align_text">
-            <div class="info">
-                <p style="font-family: Roboto;font-size: 51px;font-weight: 800;line-height: 60px;letter-spacing: 0em;">OUR MISSION</p>
-                <p style="font-family: Roboto;font-size: 79px;font-weight: 900;line-height: 93px;letter-spacing: 0em;">TAKE YOU TO THE TOP</p>
+            </header>
+            <div class="banner align_text">
+                <div class="info">
+                    <p style="font-family: Roboto;font-size: 51px;font-weight: 800;line-height: 60px;letter-spacing: 0em;">OUR MISSION</p>
+                    <p style="font-family: Roboto;font-size: 79px;font-weight: 900;line-height: 93px;letter-spacing: 0em;">TAKE YOU TO THE TOP</p>
+                </div>
+                <div>
+                    <img src="assets/elevator button.png" style="width:60px;height:60px;">
+                </div>
             </div>
-            <!--BUTTON-->
         </div>
+        
         <div class="services">
             <div class="services_title align_text">
                <div class="child">
@@ -72,7 +79,7 @@
             </div>
             <div class="products_list" style="margin-bottom:105px;">
                 <div class="element" style="text-align: center;">
-                        <div>
+                        <div class="img">
                             <img src="assets/bkg_2 2-1.png">
                         </div>
                         <div class="products_list_element_info">
@@ -81,38 +88,38 @@
                         </div>
                 </div>
                 <div class="element" style="text-align: center;">
-                         <div>
+                         <div class="img">
                             <img src="assets/bkg_2 2-2.png">
                         </div>
                         <div class="products_list_element_info">
-                            <p class="products_list_element_title">SAFETY</p>
+                            <p class="products_list_element_title">GAP</p>
                             <p class="products_list_element_text">Lorem ipsum dolor sit amet, consectetur</p>
                         </div>
                 </div>
                 <div class="element" style="text-align: center;">
-                         <div>
+                         <div class="img">
                             <img src="assets/bkg_2 2-3.png">
                         </div>
                         <div class="products_list_element_info">
-                            <p class="products_list_element_title">SAFETY</p>
+                            <p class="products_list_element_title">DOOR</p>
                             <p class="products_list_element_text">Lorem ipsum dolor sit amet, consectetur</p>
                         </div>
                 </div>
                 <div class="element" style="text-align: center;">
-                         <div>
+                         <div class="img">
                             <img src="assets/bkg_2 2-4.png">
                         </div>
                         <div class="products_list_element_info">
-                            <p class="products_list_element_title">SAFETY</p>
+                            <p class="products_list_element_title">MECHANICS</p>
                             <p class="products_list_element_text">Lorem ipsum dolor sit amet, consectetur</p>
                         </div>
                 </div>
                 <div class="element" style="text-align: center;">
-                         <div>
+                         <div class="img">
                             <img src="assets/bkg_2 2.png">
                         </div>
                         <div class="products_list_element_info">
-                            <p class="products_list_element_title">SAFETY</p>
+                            <p class="products_list_element_title">HOISTWAY/HATCH</p>
                             <p class="products_list_element_text">Lorem ipsum dolor sit amet, consectetur</p>
                         </div>
                 </div>
@@ -142,11 +149,11 @@
                     <div class="element" style="margin-bottom: 47px;">
                         <div style="margin-right: 60px;">
                             <label for="phone_number">PHONE NUMBER</label><br>
-                            <input type="text" id="phone_number" name="phone_number" placeholder="0 (000) 000 000">
+                            <input type="text" id="phone_number" name="phone_number" placeholder="0 (000) 000 000" style="padding:18px 50px;">
                         </div>
                         <div>
                             <label for="language">PREFERED LANGUAGE</label><br>
-                            <select name="language" id="language">
+                            <select name="language" id="language"  style="padding:18px 50px;">
                               <option value="volvo">ENGLISH</option>
                               <option value="saab">FRENCH</option>
                               <option value="opel">SPANISH</option>
@@ -161,31 +168,31 @@
             </div>
         </div>
         <div class="rubban">
-            <p>With your trust since 1943.</p>
-            <!--IMAGE-->
+            <p style="font-family: Roboto;font-size: 45px;font-weight: 900;line-height: 53px;letter-spacing: 0em;text-align: left;color:#FF7630;">With your trust since 1943.</p>
+            <img src="assets/signature.png">
         </div>
         <footer>
             <div class="row">
                 <div>
                     <div class="usa_contact">
                         <!--In uppercase-->
-                        <p>UNITED STATES office</p>
+                        <p style="font-family: Roboto;font-size: 15px;font-weight: 700;line-height: 18px;letter-spacing: 0em;text-align: left;color: #FF7630;text-transform: uppercase;">UNITED STATES office</p>
                         <!--In uppercase-->
-                        <p>456 harlem boulevard saratoga springs, ny, usa</p>
-                        <p>1 999 543-4567</p>
+                        <p style="font-family: Roboto;font-size: 22px;font-weight: 400;line-height: 26px;letter-spacing: 0em;text-align: left;text-transform: uppercase;">456 harlem boulevard <br> saratoga springs, ny, usa</p>
+                        <p style="font-family: Roboto;font-size: 22px;font-weight: 700;line-height: 26px;letter-spacing: 0em;text-align: left;">1 999 543-4567</p>
                     </div>
                 </div>
                 <div>
                     <div class="canada_section">
                         <!--In uppercase-->
-                        <p>Canada’s office</p>
+                        <p style="font-family: Roboto;font-size: 15px;font-weight: 700;line-height: 18px;letter-spacing: 0em;text-align: right;color: #FF7630;text-transform: uppercase;">Canada’s office</p>
                         <!--In uppercase-->
-                        <p>23895 bradshaw boulevard Kingston, ont, ca</p>
-                        <p>1 999 543-4567</p>
+                        <p style="font-family: Roboto;font-size: 22px;font-weight: 400;line-height: 26px;letter-spacing: 0em;text-align: right;text-transform: uppercase;">23895 bradshaw boulevard <br> Kingston, ont, ca</p>
+                        <p style="font-family: Roboto;font-size: 22px;font-weight: 700;line-height: 26px;letter-spacing: 0em;text-align: right;">1 999 543-4567</p>
                     </div>
                 </div>
             </div>
-            <p>All rights reserved to CodeBoxx Solutions ©, 2022.</p>
+            <p style="font-family: Roboto;font-size: 10px;font-weight: 400;line-height: 12px;letter-spacing: 0em;margin-bottom: 37px;">All rights reserved to CodeBoxx Solutions ©, 2022.</p>
         </footer>
         <script src="" async defer></script>
     </body>
