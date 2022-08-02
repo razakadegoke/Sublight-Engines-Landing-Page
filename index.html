@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <title>Sublight Engine</title>
+        <link rel="icon" href="assets/Group.png" type="image/icon type">
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title></title>
-        <meta name="description" content="">
+        <meta name="description" content="Template">
         <link rel="stylesheet" href="css/main.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,10 +21,10 @@
                 </div>
                 <nav>
                     <ul>
-                        <li><a href="#">OUR SERVICES</a></li>
-                        <li><a href="#">OUR PRODUCTS</a></li>
-                        <li><a href="#">ABOUT US</a></li>
-                        <li><a href="#">CONTACT US</a></li>
+                        <li><a href="#services">OUR SERVICES</a></li>
+                        <li><a href="#products">OUR PRODUCTS</a></li>
+                        <li><a href="#more_about_us">ABOUT US</a></li>
+                        <li><a href="#footer">CONTACT US</a></li>
                     </ul>
                 </nav>
             </header>
@@ -33,12 +34,12 @@
                     <p style="font-family: Roboto;font-size: 79px;font-weight: 900;line-height: 93px;letter-spacing: 0em;">TAKE YOU TO THE TOP</p>
                 </div>
                 <div>
-                    <img src="assets/elevator button.png" style="width:60px;height:60px;">
+                    <a href="#services"><img src="assets/elevator button.png" style="width:60px;height:60px;"></a>
                 </div>
             </div>
         </div>
         
-        <div class="services">
+        <div id="services" class="services">
             <div class="services_title align_text">
                <div class="child">
                 <p style="font-family: Roboto;font-size: 25px;font-weight: 700;line-height: 29px;letter-spacing: 0em;">one-stop for your elevator needs</p>
@@ -63,7 +64,7 @@
                 </div>
             </div>
         </div>
-        <div class="more_about_us">
+        <div id="more_about_us" class="more_about_us">
             <div class="section">
                 <p style="font-family: Roboto;font-size: 25px;font-weight: 700;line-height: 29px;letter-spacing: 0em;text-transform: uppercase">2022 SECUREBOARDS SERIES</p>
                 <!--In uppercase-->
@@ -72,7 +73,7 @@
             </div>
             <img src="assets/bkg_2 1.png" alt="maintain">     
         </div>
-        <div class="products">
+        <div id="products" class="products">
             <div class="title align_text" style="padding-top: 60px;padding-bottom: 110px;">
                 <p style="text-transform: uppercase;font-family: Roboto;font-size: 25px;font-weight: 700;line-height: 29px;letter-spacing: 0em;">need more for your fleet of elevators </p>
                 <p style="text-transform: uppercase;font-family: Roboto;font-size: 45px;font-weight: 900;line-height: 53px;letter-spacing: 0em;">all our products are made<br> with heart and soul</p>
@@ -126,7 +127,7 @@
             </div>
             <!--In uppercase-->
             <div class="button">
-                <p><a>DOWNLOAD OUR CATALOG</a></p>
+                <p><a href="#" style="color: white;">DOWNLOAD OUR CATALOG</a></p>
             </div>
         </div>
         <div class="forms">
@@ -138,7 +139,7 @@
             </div>
             <div class="form_section">
                 <form>
-                    <div style="margin-bottom: 40px;">
+                    <div style="margin-bottom: 40px;text-align: left;">
                         <label for="name">NAME *</label><br>
                         <input type="text" id="name" name="name" placeholder="Enter your full name" style="padding:18px 200px;">
                     </div>
@@ -153,16 +154,17 @@
                         </div>
                         <div>
                             <label for="language">PREFERED LANGUAGE</label><br>
-                            <select name="language" id="language"  style="padding:18px 50px;">
-                              <option value="volvo">ENGLISH</option>
-                              <option value="saab">FRENCH</option>
-                              <option value="opel">SPANISH</option>
+                            <select name="language" id="language"  style="padding:18px 50px;text-align: left;">
+                              <option value="#" style="padding-left: -25px;text-align: left;">Select</option>
+                              <option value="english">ENGLISH</option>
+                              <option value="french">FRENCH</option>
+                              <option value="spanish">SPANISH</option>
                             </select>
                         </div>
                     </div>
                     <!--In uppercase-->
                     <div class="button">
-                        <p><a>SUBMIT</a></p>
+                        <p><a href="#" style="color: black;">SUBMIT</a></p>
                     </div>
                 </form>
             </div>
@@ -171,7 +173,7 @@
             <p style="font-family: Roboto;font-size: 45px;font-weight: 900;line-height: 53px;letter-spacing: 0em;text-align: left;color:#FF7630;">With your trust since 1943.</p>
             <img src="assets/signature.png">
         </div>
-        <footer>
+        <footer id="footer">
             <div class="row">
                 <div>
                     <div class="usa_contact">
