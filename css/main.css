@@ -60,6 +60,8 @@ header nav ul li{
     display: flex;
     flex-direction: column;
     background-image: url('../assets/bkg_1\ 1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     color: white;
 
 }
@@ -71,6 +73,7 @@ header nav ul li{
 .banner img{
     margin-bottom: 200px;
     margin-top: 25px;
+
 }
 
 .banner .info p:nth-child(1){
@@ -155,6 +158,7 @@ header nav ul li{
 
 .more_about_us{
     display: flex;
+    align-items: center;
     gap: 50px;
     padding: 70px;
 }
