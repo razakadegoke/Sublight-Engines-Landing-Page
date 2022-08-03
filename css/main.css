@@ -279,6 +279,10 @@ header nav ul li{
     margin-bottom: 120px;
 }
 
+.forms .title img{
+    margin-top: 25px;
+}
+
 .forms .title p:nth-child(1){
     font-size: 25px;
     font-weight: 700;
