@@ -70,7 +70,6 @@ a:link, a:visited {
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
-
 }
 
 .banner .info{
@@ -80,7 +79,12 @@ a:link, a:visited {
 .banner img{
     margin-bottom: 200px;
     margin-top: 25px;
+    border-radius: 50px;
+    transition: 0.5s;
+}
 
+.banner img:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.753), 0 6px 20px 0 rgba(0, 0, 0, 0.784);
 }
 
 .banner .info p:nth-child(1){
@@ -107,7 +111,6 @@ a:link, a:visited {
 .services{
     background-color: #383838;
     color: white;
-    /* height: 711px; */
 }
 
 .services .services_title{
@@ -130,7 +133,6 @@ a:link, a:visited {
     justify-content: center;
     align-items: center;
     gap: 150px;
-    /* height: 507px; */
 }
 
 .services .row .element p{
