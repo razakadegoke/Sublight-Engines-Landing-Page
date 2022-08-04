@@ -29,6 +29,11 @@ a:link, a:visited {
 
 .header_container header nav ul li a{
     color: white;
+    transition: 0.5s;
+}
+
+.header_container header nav ul li a:hover{
+    color: #FF7630;
 }
 
 .header_container header nav ul{
