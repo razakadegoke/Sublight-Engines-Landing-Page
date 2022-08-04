@@ -11,7 +11,7 @@ Video présentation : https://youtu.be/qSUkGLBTvVk
 
 * Main file is index.html
 
-* Main CSS file assests/main.css
+* Main CSS file CSS/main.css
 
 * Respoinsiveness not done completely
 
