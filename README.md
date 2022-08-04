@@ -11,7 +11,9 @@ Video présentation : https://youtu.be/qSUkGLBTvVk
 
 * Main file is index.html
 
-* Main CSS file CSS/main.css
+* Main CSS file css/main.css
+
+* Main JS file js/main.js
 
 * Respoinsiveness not done completely
 
