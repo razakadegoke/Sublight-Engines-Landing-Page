@@ -39,7 +39,6 @@ a:link, a:visited {
 .header_container header nav ul{
     list-style-type: none;
     margin-top: 25px;
-    margin-right: 150px;
     float: right;
     
 }
@@ -167,8 +166,9 @@ a:link, a:visited {
 
 .more_about_us{
     display: flex;
-    align-items: center;
-    gap: 50px;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap:50px;
     padding: 70px;
 }
 
@@ -191,6 +191,7 @@ a:link, a:visited {
     line-height: 42px;
     letter-spacing: 0em;
     text-transform: uppercase;
+
 }
 .more_about_us .section p:nth-child(3){
     font-size: 20px;
@@ -198,6 +199,7 @@ a:link, a:visited {
     line-height: 22px;
     letter-spacing: 0em;
     margin-top: 20px;
+
 }
 
 /* PRODUCTS */
@@ -529,12 +531,13 @@ label {
 
 @media screen and (max-width:540px){
 
-    header{
+    .header_container header{
         flex-wrap: nowrap;
         justify-content: space-between;
     }
 
-    header nav ul {
+    .header_container header nav ul {
+        display: none;
         margin: 0;
         margin-top: 20px;
     }
