@@ -83,7 +83,7 @@ a:link, a:visited {
 }
 
 .banner img:hover{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.753), 0 6px 20px 0 rgba(0, 0, 0, 0.784);
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.83), 0 6px 20px 0 rgba(255, 255, 255, 0.763);
 }
 
 .banner .info p:nth-child(1){
