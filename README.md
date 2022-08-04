@@ -2,7 +2,7 @@
 
 This landing page is make with only HTML and CSS(NO FRAMEWORK USED)
 
-Link for demo : http://sublightengine.com.s3-website.ca-central-1.amazonaws.com/
+Link for demo : https://razakadegoke.github.io/Sublight_Engines_Landing_Page/
 
 ## Things to know about the project : 
 
