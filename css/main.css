@@ -1,4 +1,3 @@
-
 * {
     padding: 0;
     margin: 0;
@@ -62,7 +61,6 @@ a:link, a:visited {
 }
 
 /* BANNER */
-
 .banner{
     width: 100%;
     height: 960px;
@@ -109,7 +107,6 @@ a:link, a:visited {
 }
 
 /* SERVICES */
-
 .services{
     background-color: #383838;
     color: white;
@@ -165,7 +162,6 @@ a:link, a:visited {
 }
 
 /* MORE_ABOUT_US */
-
 .more_about_us{
     display: flex;
     justify-content: center;
@@ -204,7 +200,6 @@ a:link, a:visited {
 }
 
 /* PRODUCTS */
-
 .products{
     color:white;
     background-color: #ff7630;
@@ -305,7 +300,6 @@ a:link, a:visited {
 }
 
 /* FORMS */
-
 .forms .title{
     padding-top: 104px;
     margin-bottom: 50px;
@@ -345,7 +339,10 @@ a:link, a:visited {
 }
 
 .forms .form_section .button p{
-    display: inline-block;
+    transition: 0.5s;
+}
+
+.forms .form_section .button{
     transition: 0.5s;
 }
 
@@ -353,16 +350,10 @@ a:link, a:visited {
     width: 50%;
 }
 
-.forms .form_section .button p:hover{
+.forms .form_section .button:hover{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
 }
 
-/* .forms .form_section form{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-} */
 form div{
     width: 45.578851412944395vw;
 }
@@ -388,7 +379,6 @@ form div{
 .forms .form_section form .button p a{color: black;}
 
 /* RUBAN */
-
 .rubban{
     background-color: #292929;
     height: 255px;
@@ -417,6 +407,7 @@ footer .row{
     height: 150px;
     margin-top: 80px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     margin-left: 65px;
     margin-right: 65px;
@@ -543,7 +534,6 @@ label {
 }
 
 @media screen and (max-width:1100px){
-    
 
     .forms form {
         width: 90%;
@@ -558,44 +548,38 @@ label {
     }
 
     .header_container header nav{
-        visibility: hidden;
         margin-top: -41px;
         z-index: 1;
-    }
-
-    .header_container header #nav{
-        visibility: hidden;
+        transition: 0s;
     }
     
     .header_container header nav ul li a {
+        transition: 0s;
         font-size: 20px;
     }
 
     .header_container header nav ul li {
+        transition: 0s;
         display: block;
         background-color: rgba(0, 0, 0, 0.616);
         padding: 25px;
         width: 100%;
     }
 
+    .header_container header nav ul li:hover{
+        background-color: rgba(155, 155, 155, 0.616);
+    }
+
     .header_container header nav ul{
-        text-align: center;
+        text-align: left;
         width: 100%;
-    }
-
-    .header_container header nav ul li {
-        transition: 0s;
-    }
-
-    .header_container header nav ul li a{
-        transition: 0s;
     }
 
     .header_container header .icon i{
         visibility: visible;
         color: white;
-        font-size: 65px;
-        height: 80px;
+        font-size: 40px;
+        margin-top: 15px;
     }
 
     .header_container header .icon{
@@ -607,12 +591,6 @@ label {
         z-index: 3;
     }
 }
-
-/* @media screen and (max-width:650px){
-    .forms form {
-        width: 90%;
-    }
-} */
 
 @media screen and (max-width:1200px){
     .forms .form_section .element{
@@ -630,6 +608,7 @@ label {
     .header_container header nav ul {
         margin: 0;
         margin-top: 25px;
+        text-align: left;
     }
 
     header nav ul li a{
@@ -690,6 +669,217 @@ label {
     footer #inc{
         margin-top: 40px;
     }
+}
+
+@media screen and (max-width:500px){
+
+    .header_container{
+        margin-top: 0;
+        height: 60px;
+    }
+
+    .header_container .logo a img{
+        margin-top: 5px;
+        width: 50px;
+        height: 50px
+    }
+
+    .header_container header .icon i{
+        margin-top: 20px;
+        font-size: 20px;
+    }
+
+    .header_container header .icon{
+        width: 50px;
+        height: 40px;
+    }
+
+    .header_container #nav ul{
+        margin-top: 41px;
+    }
+
+    .banner {
+        height: 500px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .banner .info p:nth-child(1){
+        font-size: 27px;
+    }
+
+    .banner .info p:nth-child(2){
+        line-height: 40px;
+        font-size: 40px;
+    }
+
+    .banner div:nth-child(2) a img{
+        margin-bottom: -40px;
+    }
+
+    .services .services_title .child p:nth-child(1) {
+        font-size: 15px;
+    }
+
+    .services .services_title .child p:nth-child(2) {
+        font-size: 23px;
+    }
+
+    .services .row {
+        margin-top: 0;
+    }
+
+    .services .row .element{
+        margin-bottom: 60px;
+    } 
+
+    .more_about_us img{
+        height: 100%;
+    }
+
+    .more_about_us .section{
+        margin-top: 0;
+    }
+
+    .more_about_us .section p:nth-child(3){
+        font-size: 15px;
+        font-weight: 200;
+    }
+
+    .more_about_us{
+        flex-direction: column-reverse;
+        padding: 20px;
+    }
+
+    .products .title {
+        padding-bottom: 70px;
+    }
+
+    .products .title p:nth-child(1){
+        font-size: 15px;
+    }
+
+    .products .button{
+        visibility: hidden;
+        padding-bottom: 0;
+    }
+
+    .products .title p:nth-child(2){
+        font-size: 22px;
+        line-height: 25px;
+    }
+
+    .forms .title p:nth-child(1){
+        font-size: 15px;
+    }
+
+    .forms .title p:nth-child(2){
+        font-size: 25px;
+        line-height: 25px;
+    }
+
+    .rubban{
+        flex-wrap: wrap;
+        padding: 50px 10px;
+    }
+
+    .rubban p{
+        font-size: 40px;
+        width: 80%;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .rubban img{
+        margin: 0;
+        width: 80%;
+        height: 150px;
+    }
+
+    footer .row{
+        flex-direction: column;
+        margin: 0;
+    }
+
+    footer .row div .usa_contact p:nth-child(1){
+        text-align: center;
+    }
+
+    footer .row div .usa_contact {
+        margin-bottom: 50px;
+    }
+
+    footer .row div .usa_contact p:nth-child(2){
+        text-align: center;
+        font-size: 25px;
+        font-weight: 300;
+        line-height: 30px;
+    }
+
+    footer .row div .usa_contact p:nth-child(3){
+        text-align: center;
+        float: none;
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 55px;
+    }
+
+    footer .row div .canada_contact {
+        margin-bottom: 50px;
+    }
+
+    footer #inc {
+        margin-top: 250px;
+    }
+
+    footer .row div .canada_contact p:nth-child(1){
+        text-align: center;
+    }
+
+    footer .row div .canada_contact p:nth-child(2){
+        text-align: center;
+        font-size: 25px;
+        font-weight: 300;
+        line-height: 30px;
+    }
+
+    footer .row div .canada_contact p:nth-child(3){
+        text-align: center;
+        float: none;
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 55px;
+    }
+
+    footer{
+        margin-top:50px;
+        margin-bottom:50px;
+    }
+
+    .button_mobile_screen{
+        position: absolute;
+        top: 580px;
+        padding-top: 20px;
+        text-align: center;
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.616);
+        width: 100%;
+        height: 75px;
+    }
+    
+    .button_mobile_screen p a{
+        font-size: 15px;
+        color: white;
+    }
+    
+    .button_mobile_screen p{
+        color: white;
+        border: 5px solid white;
+        padding: 10px 25px;
+        display: inline-block;
+        transition: 0.5s;
+    }
+    
 }
 
 
