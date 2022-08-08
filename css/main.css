@@ -539,10 +539,6 @@ label {
         width: 90%;
     }
 
-    .header_container header .logo a img {
-        width: 200px;
-    }
-
     .header_container header {
         flex-direction: column;
     }
