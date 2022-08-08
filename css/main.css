@@ -36,6 +36,10 @@ a:link, a:visited {
     color: #FF7630;
 }
 
+.header_container header .icon i{
+    visibility: hidden;
+}
+
 .header_container header nav ul{
     list-style-type: none;
     margin-top: 25px;
@@ -45,7 +49,6 @@ a:link, a:visited {
 
 .header_container header nav ul li{
     margin:0 30px 0 0;
-    font-family: Roboto;
     font-size: 16px;
     font-weight: 700;
     line-height: 19px;
@@ -154,7 +157,6 @@ a:link, a:visited {
 
 .services .row .element p{
     text-transform: uppercase;
-    font-family: Roboto;
     font-size: 25px;
     font-weight: 700;
     line-height: 29px;
@@ -234,7 +236,6 @@ a:link, a:visited {
 
 .products_list_element_title{
     color: #383838;
-    font-family: Roboto;
     font-size: 20px;
     font-weight: 700;
     line-height: 23px;
@@ -244,7 +245,6 @@ a:link, a:visited {
 
 .products_list_element_text{
     color: #383838;
-    font-family: Roboto;
     font-size: 20px;
     font-weight: 400;
     line-height: 22px;
@@ -337,34 +337,51 @@ a:link, a:visited {
 
 .forms .form_section .button{
     text-align: center;
-    padding-bottom: 116px;
+    padding: 15px 0;
+    width: 100%;
+    border: 5px solid black;
+    box-sizing: border-box;
+    margin-bottom: 100px;
 }
 
 .forms .form_section .button p{
-    border: 5px solid black;
-    padding: 14px 215px;
     display: inline-block;
     transition: 0.5s;
+}
+
+.forms form {
+    width: 50%;
 }
 
 .forms .form_section .button p:hover{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
 }
 
-.forms .form_section form{
+/* .forms .form_section form{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 500px;
-}
+} */
 form div{
-    width: 500px;
+    width: 45.578851412944395vw;
 }
 
-.forms .form_section form div:nth-child(1){margin-bottom: 20px;}
-.forms .form_section form div:nth-child(2){margin-bottom: 20px;}
-.forms .form_section form div:nth-child(3){margin-bottom: 27px;}
+.forms .form_section form div:nth-child(1){
+    width: 100%;
+    margin-bottom: 30px;
+
+}
+.forms .form_section form div:nth-child(2){
+    width: 100%;
+    margin-bottom: 30px;
+
+}
+.forms .form_section form div:nth-child(3){
+    width: 100%;
+    margin-bottom: 30px;
+
+}
 
 .forms .form_section form .element div:nth-child(1){margin-right: 60px;}
 .forms .form_section form .element{display: flex;justify-content: space-between;}
@@ -514,7 +531,6 @@ option{
 }
 
 label {
-    font-family: Roboto;
     font-size: 10px;
     font-weight: 700;
     line-height: 12px;
@@ -526,9 +542,85 @@ label {
     margin-left:20px;
 }
 
+@media screen and (max-width:1100px){
+    
 
+    .forms form {
+        width: 90%;
+    }
+
+    .header_container header {
+        flex-direction: column;
+    }
+
+    .header_container header .logo {
+        z-index: 2;
+    }
+
+    .header_container header nav{
+        visibility: hidden;
+        margin-top: -41px;
+        z-index: 1;
+    }
+
+    .header_container header #nav{
+        visibility: hidden;
+    }
+    
+    .header_container header nav ul li a {
+        font-size: 20px;
+    }
+
+    .header_container header nav ul li {
+        display: block;
+        background-color: rgba(0, 0, 0, 0.616);
+        padding: 25px;
+        width: 100%;
+    }
+
+    .header_container header nav ul{
+        text-align: center;
+        width: 100%;
+    }
+
+    .header_container header nav ul li {
+        transition: 0s;
+    }
+
+    .header_container header nav ul li a{
+        transition: 0s;
+    }
+
+    .header_container header .icon i{
+        visibility: visible;
+        color: white;
+        font-size: 65px;
+        height: 80px;
+    }
+
+    .header_container header .icon{
+        height: 80px;
+        width: 80px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 3;
+    }
+}
+
+/* @media screen and (max-width:650px){
+    .forms form {
+        width: 90%;
+    }
+} */
 
 @media screen and (max-width:1200px){
+    .forms .form_section .element{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:1000px){
 
     .header_container header{
         flex-wrap: nowrap;
@@ -537,7 +629,7 @@ label {
 
     .header_container header nav ul {
         margin: 0;
-        margin-top: 20px;
+        margin-top: 25px;
     }
 
     header nav ul li a{
@@ -554,6 +646,12 @@ label {
         padding-bottom: 100px;
         gap:10px;
     }
+
+    .more_about_us img{
+        width: 100%;
+        height: 375px;
+    }
+    
 
     .more_about_us .section{
         margin-top: 50px;
