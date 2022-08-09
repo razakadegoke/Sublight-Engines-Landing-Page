@@ -155,11 +155,11 @@
                 <form>
                     <div>
                         <label for="name">NAME *</label><br>
-                        <input type="text" id="name" name="name" placeholder="Enter your full name">
+                        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
                     </div>
                     <div>
-                        <label for="email">EMAIL ADDRESSES *</label><br>
-                        <input type="text" id="email" name="email" placeholder="yourname@company.com">
+                        <label for="email_id">EMAIL ADDRESSES *</label><br>
+                        <input type="text" id="email_id" name="email" placeholder="yourname@company.com" required>
                     </div>
                     <div class="element">
                         <div>
@@ -172,11 +172,10 @@
                               <option value="#">Select</option>
                               <option value="english">ENGLISH</option>
                               <option value="french">FRENCH</option>
-                              <option value="spanish">SPANISH</option>
                             </select>
                         </div>
                     </div>
-                    <div class="button">
+                    <div class="button" id="send_email">
                         <p><a href="#">SUBMIT</a></p>
                     </div>
                 </form>
@@ -205,9 +204,18 @@
             </div>
             <p id="inc">All rights reserved to CodeBoxx Solutions ©, 2022.</p>
         </footer>
-        <div class="button_mobile_screen">
-            <p><a href="#">DOWNLOAD OUR CATALOG</a></p>
+        <div id="button_container">
+            <div class="button_mobile_screen">
+                <p><a href="#">DOWNLOAD OUR CATALOG</a></p>
+            </div>
         </div>
         <script src="js/main.js" async defer></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+        (function(){
+            emailjs.init("UJjgWWk_4WMoO0PAu");
+        })();
+        </script>
     </body>
 </html>
