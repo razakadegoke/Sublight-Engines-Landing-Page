@@ -16,3 +16,26 @@ window.addEventListener("resize", () => {
         document.getElementById("nav").style.visibility = "hidden"
     }
 })
+
+// SENDING EMAIL
+const submit = document.getElementById("send_email")
+
+submit.addEventListener("click", () =>  {
+    var language = document.getElementById("language").value
+    var params =  {
+        name: document.getElementById("name").value,
+        email_id: document.getElementById("email_id").value
+    }
+
+    if (language === "english") {
+        emailjs.send("service_o7jktmv","template_log7gp4",params)
+        alert("Message Send!")
+    } else if (language === "french") {
+        emailjs.send("service_o7jktmv","template_vllyk7s",params)
+        alert("Message Send!")
+    } else {
+        alert("Please select a language")
+    }
+})
+
+
