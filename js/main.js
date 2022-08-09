@@ -7,6 +7,9 @@ document.getElementById("icon").addEventListener("click", () => {
 })
 
 window.addEventListener("resize", () => {
+    if (window.innerWidth === 1100) {
+        document.getElementById("nav").style.visibility = "hidden"
+    }
     if (window.innerWidth > 1100) {
         document.getElementById("nav").style.visibility = "visible"
     }else{

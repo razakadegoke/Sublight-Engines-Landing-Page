@@ -192,7 +192,7 @@ a:link, a:visited {
 }
 .more_about_us .section p:nth-child(3){
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 200;
     line-height: 22px;
     letter-spacing: 0em;
     margin-top: 20px;
@@ -495,6 +495,10 @@ footer #inc{
     margin-bottom: 37px;
 }
 
+#button_container {
+    visibility: hidden;
+}
+
 /* INPUT */
 
 input[type=text], select {
@@ -641,6 +645,10 @@ label {
         gap: 20px;
     }
 
+    .more_about_us .section p:nth-child(3){
+        font-weight: 200;
+    }
+
     .rubban p {
         font-size: 25px;
         margin-left: 10px;
@@ -680,8 +688,9 @@ label {
 
     .header_container .logo a img{
         margin-top: 5px;
-        width: 50px;
-        height: 50px
+        width: 100px;
+        height: 50px;
+        margin-left: -40px;
     }
 
     .header_container header .icon i{
@@ -856,23 +865,31 @@ label {
         margin-bottom:50px;
     }
 
-    .button_mobile_screen{
-        position: absolute;
-        top: 580px;
+    #button_container{
+        height: 75px;
+        position: fixed;
+        top: 90%;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+
+    #button_container .button_mobile_screen{
+        visibility: visible; 
+        position: relative;
         padding-top: 20px;
         text-align: center;
-        position: fixed;
         background-color: rgba(0, 0, 0, 0.616);
         width: 100%;
         height: 75px;
     }
     
-    .button_mobile_screen p a{
+    #button_container .button_mobile_screen p a{
         font-size: 15px;
         color: white;
     }
     
-    .button_mobile_screen p{
+    #button_container .button_mobile_screen p{
         color: white;
         border: 5px solid white;
         padding: 10px 25px;
@@ -880,6 +897,13 @@ label {
         transition: 0.5s;
     }
     
+}
+
+@media screen and (max-width:700px){
+
+    .header_container .logo a img{
+        width: 350px;
+    }
 }
 
 
