@@ -539,6 +539,10 @@ label {
 
 @media screen and (max-width:1100px){
 
+    .banner{
+        background-position: center; 
+    }
+
     .forms form {
         width: 90%;
     }
@@ -552,6 +556,7 @@ label {
     }
 
     .header_container header nav{
+        visibility: hidden;
         margin-top: -41px;
         z-index: 1;
         transition: 0s;
@@ -711,6 +716,7 @@ label {
         height: 500px;
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: center; 
     }
 
     .banner .info p:nth-child(1){
@@ -834,11 +840,12 @@ label {
     }
 
     footer .row div .canada_contact {
-        margin-bottom: 50px;
+        margin-bottom: 20px;
     }
 
     footer #inc {
         margin-top: 250px;
+        margin-bottom: 150px;
     }
 
     footer .row div .canada_contact p:nth-child(1){
@@ -903,6 +910,10 @@ label {
 
     .header_container .logo a img{
         width: 350px;
+    }
+
+    .header_container header nav ul {
+        margin-top: 46.5px;
     }
 }
 
